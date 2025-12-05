@@ -24,6 +24,9 @@ import CollaborativeProject from './pages/admin/CollaborativeProject';
 import Services from './pages/admin/Services';
 import ServiceCategories from './pages/admin/ServiceCategories';
 import ServiceDetails from './pages/admin/ServiceDetails';
+import TrainingApplicationsManagement from './pages/admin/TrainingApplicationsManagement';
+import TrainingProgramsManagement from './pages/admin/TrainingProgramsManagement';
+import SuccessStoriesManagement from './pages/admin/SuccessStoriesManagement';
 
 function App() {
   return (
@@ -66,6 +69,9 @@ function App() {
               <Route path="services" element={<Services/>} />
               <Route path="service-categories" element={<ServiceCategories/>} />
               <Route path="service-details" element={<ServiceDetails/>} />
+              <Route path="training-applications" element={<TrainingApplicationsManagement/>} />
+              <Route path="training-programs" element={<TrainingProgramsManagement/>} />
+              <Route path="success-stories" element={<SuccessStoriesManagement/>} />
               
               {/* New Admin Users Management Route */}
               <Route path="admin-users" element={<AdminUsers />} />

@@ -128,6 +128,36 @@ SERVICE_DETAILS: {
     DELETE: (id) => `${BASE_URL}events/${id}`,
   },
 
+  TRAINING_PROGRAMS: {
+  ADD: `${BASE_URL}training-programs/add`,
+  UPDATE: `${BASE_URL}training-programs/update`,
+  GET_ALL: `${BASE_URL}training-programs/getAll`,
+  GET_ACTIVE: `${BASE_URL}training-programs/getActive`,
+  GET_BY_ID: (id) => `${BASE_URL}training-programs/getById/${id}`,
+  GET_BY_SCREEN: (screenName) => `${BASE_URL}training-programs/screen/${screenName}`,
+  GET_BY_SCREEN_ACTIVE: (screenName) => `${BASE_URL}training-programs/screen/${screenName}/active`,
+  DELETE: (id) => `${BASE_URL}training-programs/${id}`,
+},
+
+TRAINING_APPLICATIONS: {
+  ADD: `${BASE_URL}training-applications/add`,
+  UPDATE: `${BASE_URL}training-applications/update`,
+  GET_ALL: `${BASE_URL}training-applications/getAll`,
+  GET_BY_ID: (id) => `${BASE_URL}training-applications/getById/${id}`,
+  GET_BY_PROGRAM: (programId) => `${BASE_URL}training-applications/program/${programId}`,
+  GET_BY_STATUS: (status) => `${BASE_URL}training-applications/status/${status}`,
+  UPDATE_STATUS: `${BASE_URL}training-applications/updateStatus`,
+  DELETE: (id) => `${BASE_URL}training-applications/${id}`,
+},
+SUCCESS_STORIES: {
+  ADD: `${BASE_URL}success-stories/add`,
+  UPDATE: `${BASE_URL}success-stories/update`,
+  GET_ALL: `${BASE_URL}success-stories/getAll`,
+  GET_ACTIVE: `${BASE_URL}success-stories/getActive`,
+  GET_BY_ID: (id) => `${BASE_URL}success-stories/getById/${id}`,
+  DELETE: (id) => `${BASE_URL}success-stories/${id}`,
+},
+
 
   USERS: {
     ADD: `${BASE_URL}users/add`,
